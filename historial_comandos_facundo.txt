@@ -1,0 +1,96 @@
+ls
+whoami
+ls
+pwd
+cd /
+ls
+cdl
+cd
+ls
+cd
+ssh-keygen -t ed25519
+cd .ssh
+ls
+cat id_ed25519.pub 
+cd
+mkdir repogit
+cd repogit/
+git
+git clone git@github.com:fnxyz0010/TP_AySO.git
+ls
+cd TP_AySO/
+ls
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+man grep
+grep -i home_url /etc/os-release
+grep -i /etc/os-release
+grep -i home_url /etc/os-release
+whoami
+id -un
+echo "usuario:$(whoami)" > datos_usuario.txt
+ls
+cat datos_usuario.txt 
+rm datos_usuario.txt 
+echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt 
+git add .
+git config --global user.email "fngarcia0010@gmail.com"
+git config --global user.name "fnxyz0010"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+git push
+cpuinfo
+ls /proc
+ls /proc/cpuinfo 
+cat /proc/cpuinfo 
+vim
+vim /proc/cpuinfo 
+grep -i 'model name' /proc/cpuinfo
+echo "$(grep -i 'model name' /proc/cpuinfo)" > datos_usuario.txt 
+cat datos_usuario.txt 
+git status
+git reset --hard origin/main
+git status
+cat datos_usuario.txt 
+echo "$(grep -i 'model name' /proc/cpuinfo)" >> datos_usuario.txt 
+cat datos_usuario.txt 
+git reset --hard origin/main
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt 
+cat datos_usuario.txt 
+cat /proc/cpuinfo
+cat datos_usuario.txt 
+grep "model name" /proc/cpuinfo | head -n1
+grep "model name" /proc/cpuinfo | head -n2
+grep "model name" /proc/cpuinfo | head -n3
+grep "model name" /proc/cpuinfo
+cat datos_usuario.txt 
+git status
+git add datos_usuario.txt 
+git commit -m "feat: agregando informacion del CPU"
+ls
+cat<<EOF >> README.md
+Alumno: Facundo Garcia
+Turno: Noche
+EOF
+
+cat README.md 
+git status
+git restore README.md 
+cat README.md 
+cat<<EOF >> README.md
+Alumno: Facundo
+Division: 314
+Turno: Noche
+EOF
+
+cat README.md 
+git add README.md 
+git status
+git commit -m "ADD: agregando README y datos de usuario"
+git push
+history -a
